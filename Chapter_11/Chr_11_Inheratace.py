@@ -19,14 +19,35 @@
 
 # Multiple Inheritance occurs when the child class inherits from more than one parent classes.
 
+# class Company:
+#     company ="Microsoft"
+#     country="USA"
+
+# class Uni:
+#     uni_name = "Lincoln"
+
+# class Employee(Company, Uni):
+#     name ="Manish"
+#     salary="120000000"
+
+# b = Employee()
+
+# print(b.company)
+# print(b.name)
+# print(b.uni_name)
+
+
+#  MULTILEVEL INHERITANCE 
+# When a child class becomes a parent for another child class. 
+
 class Company:
     company ="Microsoft"
     country="USA"
 
-class Uni:
+class Uni(Company):
     uni_name = "Lincoln"
 
-class Employee(Company, Uni):
+class Employee(Uni):
     name ="Manish"
     salary="120000000"
 
