@@ -19,8 +19,30 @@ age: int  = 25
 
 #function type hints
 
-def greetings(name: str) -> str:
-    return f"Hello {name} !"
+# def greetings(name: str) -> str:
+#     return f"Hello {name} !"
 
 
-print(greetings("Manish"))
+# print(greetings("Manish"))
+
+# ADVANCED TYPE HINTS
+from typing import List, Tuple, Dict, Union
+
+# List of integers 
+
+numbers : List[int] = [1,2,3,4,5]
+
+# Tuple of string and integer
+person : Tuple[str, int] = ("Manish", 23)
+
+# Disctionary with string keys and integer values
+
+scores : Dict[str, int] = {"Manish":23, "Ravi":28}
+
+# Union type for variables that can hold multiple types
+
+identifiers : Union[int, str] = "1D56D2VC"
+
+identifiers: 123456 # this is also valid
+
+print(identifiers)
